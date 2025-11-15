@@ -34,7 +34,7 @@ That's it! The app handles all server management automatically.
 
 - **Built with:** Electron + Express.js
 - **Platform:** Windows 64-bit
-- **Size:** ~165 MB
+- **Size:** ~1.5 GB Uncopmpressed
 - **Storage Location:** Achievement data stored in `%APPDATA%\CampaignTrailOnline\`
 
 ## Future Versions

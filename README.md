@@ -5,7 +5,7 @@
 Campaign Trail Online v0.2 is an offline, OSA-compliant desktop application featuring Campaign Trail Showcase. This initial release bundles the game with a complete offline infrastructure, allowing British users and others to play without restrictions.
 
 Based on this reddit post: https://www.reddit.com/r/thecampaigntrail/comments/1ov7u8c/cts_offline_edition_first_release_american_carnage
-## What's Included in v1.0
+## What's Included in v0.2
 
 - ✅ **Campaign Trail Showcase** - Political simulation game, now in offline format
 - ✅ **"American Carnage" Scenario** - The inaugural scenario for this offline edition

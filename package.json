@@ -1,0 +1,40 @@
+{
+  "name": "campaign-trail-online",
+  "version": "1.0.0",
+  "description": "Campaign Trail Showcase - Offline Edition. OSA-compliant offline bundle with local server.",
+  "main": "src/main.js",
+  "homepage": "./",
+  "author": "ermug",
+  "license": "See LICENSE file",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-packager . CampaignTrailOnline --platform win32 --arch x64 --out dist --prune --overwrite",
+    "build-win": "npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.campaigntrail.offline",
+    "productName": "Campaign Trail Online",
+    "files": [
+      "src/",
+      "campaign-trail-showcase.github.io-offline/",
+      "node_modules/"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "${productName}.exe"
+    }
+  }
+}

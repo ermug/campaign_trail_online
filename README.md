@@ -1,123 +1,95 @@
-# Campaign Trail Online - Offline Edition
-
-An offline, OSA-compliant bundle of **Campaign Trail Showcase**, a political simulation game. Provides access for British users affected by the Online Safety Act's blocking of Imgur-hosted content.
+# Campaign Trail Online - Version 1.0
 
 ## Overview
 
-Campaign Trail Showcase is a political simulation game that allows players to attempt to win presidential elections by stepping into the shoes of various candidates. This project provides an offline version with all assets bundled locally.
+Campaign Trail Online v1.0 is an offline, OSA-compliant desktop application featuring Campaign Trail Showcase. This initial release bundles the game with a complete offline infrastructure, allowing British users and others to play without restrictions.
 
-### Why This Project?
+## What's Included in v1.0
 
-The original Campaign Trail Showcase website relies on external resources (particularly Imgur-hosted images) that are blocked in the UK under the Online Safety Act (OSA). This project solves that by:
+- ✅ **Campaign Trail Showcase** - Political simulation game, now in offline format
+- ✅ **"American Carnage" Scenario** - The inaugural scenario for this offline edition
+- ✅ **Complete Offline Bundle** - All assets, images, and data files included locally
+- ✅ **Desktop Application** - Standalone .exe with embedded server and browser
+- ✅ **Local Achievement System** - Track your accomplishments between sessions
 
-- 📦 **All assets local** - Images and resources bundled offline with no external links
-- 🔒 **OSA compliant** - No Imgur links, no external tracking, no analytics
-- 💾 **Internet preservation** - Archives the game for long-term offline access
+## Key Features
 
-Inspired by the Reddit post: https://www.reddit.com/r/thecampaigntrail/comments/1ov7u8c/cts_offline_edition_first_release_american_carnage
+- 📦 **Fully Self-Contained** - No internet connection required
+- 🔒 **OSA Compliant** - No Imgur links or external blocked content
+- 🖥️ **Simple One-Click Launch** - Just run the .exe
+- 💾 **Data Persistence** - Cookies and achievements saved locally
+- ⚙️ **Minimal Requirements** - No dependencies to install
 
-## Project Structure
+## How to Use
 
-```
-campaign_trail_online/
-├── README.md                                    # This file
-├── start-tct.cmd                                # Launcher script
-└── campaign-trail-showcase.github.io-offline/   # Offline website content
-    ├── campaign-trail/                          # Game interface
-    │   └── index.html                          # Entry point (Google Analytics removed)
-    ├── static/                                 # Assets and code
-    │   ├── js/                                 # Game scripts
-    │   ├── json/                               # Game data
-    │   ├── images/                             # Local images
-    │   └── css/                                # Stylesheets
-    └── resources/                              # Additional resources
-```
+1. **Download** `CampaignTrailOnline.exe`
+2. **Run** the executable
+3. **Play** - The game launches in a dedicated window
+4. **Exit** - Close the window to shut down
 
-## Features
-
-- ✅ **Fully Offline** - Works without internet connection
-- ✅ **OSA Compliant** - No Imgur links, no blocked content
-- ✅ **Simple Launcher** - One-click batch script to start
-
-## Getting Started
-
-### Quick Start
-
-1. **Windows Users**: Simply run `start-tct.cmd`
-   - If you have Python 3 installed, it will use that
-   - Otherwise, it will try Node.js (`npx http-server`)
-   - Browser will open automatically to `http://localhost:8000`
-
-2. **Manual Start** (any platform):
-   ```bash
-   cd campaign-trail-showcase.github.io-offline
-   python -m http.server 8000
-   # Then open browser to http://localhost:8000
-   ```
-
-### Requirements
-
-One of the following:
-- **Python 3.6+** (recommended)
-- **Node.js** with npm
-
-### Usage
-
-1. Run the launcher script or start the server manually
-2. The game interface loads at `localhost:8000`
-3. Select an election year or mod from the menu
-4. Play through the campaign scenario
-5. Close the window or server to exit
-
-## Modifications from Original
-
-Minimal modifications to ensure offline and OSA compliance:
-
-1. **Google Analytics Removed** - Eliminates external tracking calls
-2. **All Assets Localized** - No external image links (all local files)
-
-The original CTS code remains untouched.
-
-## OSA Compliance
-
-This project ensures compliance with the UK Online Safety Act by:
-
-- ❌ **No Imgur links** - All images are local files in `/static/images/`
-- ❌ **No external tracking** - Google Analytics removed
-- ❌ **No CDN dependencies** - All required assets are bundled
-- ❌ **No external API calls** - Completely self-contained
+That's it! The app handles all server management automatically.
 
 ## Technical Details
 
-- **Framework**: Static HTML/CSS/JavaScript
-- **Game Engine**: Campaign Trail codebase (original)
-- **Data**: JSON files
-- **Server**: Python's built-in `http.server` or Node.js `http-server`
+- **Built with:** Electron + Express.js
+- **Platform:** Windows 64-bit
+- **Size:** ~165 MB
+- **Storage Location:** Achievement data stored in `%APPDATA%\CampaignTrailOnline\`
 
-## Current State
+## Future Versions
 
-**v1.0 (Current)**
-- ✅ Offline bundle with one scenario
-- ✅ Simple shell script launcher
-- ✅ OSA-compliant (no external links)
-- ✅ Works on Windows (Python or Node.js required)
+**Coming Soon:**
+- Additional mods will be added to the app in future updates
 
-**Future Plans**
-- Desktop application wrapper (Electron/Tauri)
-- Single .exe deployment
-- Additional scenarios
-- Launcher UI
+The modular design allows new content to be easily integrated. Users will be able to access new scenarios as updates are released.
+
+## Current Limitations
+
+- v0.2 includes one scenario ("American Carnage")
+- Additional mods/scenarios will be added in future versions
+- Windows only (for now)
+
+## Launching Alternatives
+
+**Option 1: Electron App (Recommended)**
+- Run `CampaignTrailOnline.exe` directly
+- No setup required
+
+## Troubleshooting
+
+**App won't launch:**
+- Try running as Administrator
+- Ensure your antivirus isn't blocking the executable
+- Check that port 8000 (or nearby) is available
+
+**Achievements not saving:**
+- Check that `%APPDATA%\CampaignTrailOnline\` is writable
+- Try restarting the app
+
+**Performance issues:**
+- The app requires ~200MB RAM when running
+- Close other applications if experiencing lag
 
 ## Credits
 
-- **Campaign Trail Showcase**: Original CTS developers
-- **The Campaign Trail**: Original game by Dan Bryan
-- **Reddit Community**: Offline edition concept inspiration
+- **Campaign Trail Showcase** - Original CTS developers
+- **The Campaign Trail** - Original game by Dan Bryan
+- **Reddit Community** - Offline edition concept and inspiration
 
 ## License
 
-This project preserves and packages the Campaign Trail Showcase website as-is. The contents unique to this project are licensed under the GNU Affero General Public License v3.0
+This project preserves and packages Campaign Trail Showcase for offline use. All original code and content rights belong to their respective creators. However, the unique components of this application are licensed under the GNU AFFERO GENERAL PUBLIC LICENSE
 
-## Disclaimer
+## Support
 
-This is a preservation and accessibility project for offline use. It is not affiliated with the original Campaign Trail developers. All original code and content rights belong to their respective creators.
+For issues specific to Campaign Trail Showcase gameplay, refer to the original project documentation.
+
+For issues with the offline desktop app packaging, check the main repository documentation.
+
+---
+
+**Version:** 0.2  
+**Release Date:** November 14 2025  
+**Status:** Stable
+
+This is version 0.2 of the Campaign Trail Online offline desktop application. Future versions will expand the content library and enhance the user experience.

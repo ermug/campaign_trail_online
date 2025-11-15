@@ -1,0 +1,6 @@
+﻿win:
+  signingHashAlgorithms: null
+  certificateFile: null
+  certificatePassword: null
+  signingCertificateFile: null
+  sign: null

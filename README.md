@@ -4,6 +4,7 @@
 
 Campaign Trail Online v0.2 is an offline, OSA-compliant desktop application featuring Campaign Trail Showcase. This initial release bundles the game with a complete offline infrastructure, allowing British users and others to play without restrictions.
 
+Based on this reddit post: https://www.reddit.com/r/thecampaigntrail/comments/1ov7u8c/cts_offline_edition_first_release_american_carnage
 ## What's Included in v1.0
 
 - ✅ **Campaign Trail Showcase** - Political simulation game, now in offline format
@@ -33,7 +34,7 @@ That's it! The app handles all server management automatically.
 
 - **Built with:** Electron + Express.js
 - **Platform:** Windows 64-bit
-- **Size:** ~165 MB
+- **Size:** ~1.5 GB Uncopmpressed
 - **Storage Location:** Achievement data stored in `%APPDATA%\CampaignTrailOnline\`
 
 ## Future Versions

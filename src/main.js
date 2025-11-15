@@ -172,7 +172,7 @@ const createMenu = () => {
       label: 'About',
       submenu: [
         {
-          label: 'Campaign Trail Online v1.0',
+          label: 'Campaign Trail Online 0.2',
           enabled: false
         }
       ]

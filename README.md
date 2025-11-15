@@ -1,8 +1,8 @@
-# Campaign Trail Online - Version 1.0
+# Campaign Trail Online - Version 0.2
 
 ## Overview
 
-Campaign Trail Online v1.0 is an offline, OSA-compliant desktop application featuring Campaign Trail Showcase. This initial release bundles the game with a complete offline infrastructure, allowing British users and others to play without restrictions.
+Campaign Trail Online v0.2 is an offline, OSA-compliant desktop application featuring Campaign Trail Showcase. This initial release bundles the game with a complete offline infrastructure, allowing British users and others to play without restrictions.
 
 ## What's Included in v1.0
 
